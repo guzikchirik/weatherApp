@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="logo">Погода в Вашем городе</string>
+    <string name="hint_user_field">Введите Ваш город</string>
+    <string name="main_btn">Узнать погоду</string>
+    <string name="no_user_input">Введите текст</string>
+    <string name="wait_please">Ожидайте…</string>
+    <string name="weather_in">Погода в</string>
+    <string name="find_out_the_weather">Узнать погоду</string>
+    <string name="temperature">Температура</string>
+    <string name="temperature_feels_like">Ощущается как</string>
+    <string name="pressure">Давление</string>
+    <string name="description">Описание</string>
+    <string name="wind_speed">Скорость ветра</string>
+    <string name="humidity">Влажность</string>
+    <string name="no_info">Странно, но ничего не найдено :(</string>
+
+    <string name="menu_opt_1">Минск</string>
+    <string name="menu_opt_2">Гродно</string>
+    <string name="menu_opt_3">Солигорск</string>
+    <string name="menu_opt_4">Слуцк</string>
+    <string name="menu_opt_5">Скробово</string>
+    <string name="quit">Выход</string>
+
+    <string name="red">Красный</string>
+    <string name="green">Зеленый</string>
+    <string name="blue">Голубой</string>
+    <string name="black">Чёрный</string>
+    <string name="white">Белый</string>
+
+    <string name="work_with_user">Работа с пользователем</string>
+    <string name="work_with_user_account">Учётная запись пользователя</string>
+    <string name="new_user">Новый пользователь</string>
+    <string name="user">Пользователь</string>
+    <string name="login">Логин</string>
+    <string name="firstName">Имя</string>
+    <string name="middleName">Отчество</string>
+    <string name="lastName">Фамилия</string>
+    <string name="age">Возраст</string>
+    <string name="address">Адрес</string>
+    <string name="street">Улица</string>
+    <string name="city">Город</string>
+    <string name="building">Дом</string>
+    <string name="create_user">Создать пользователя</string>
+    <string name="user_added">Пользователь успешно добавлен</string>
+
+    <string name="empty_field_error">Поле не может быть пустым!</string>
+
+    <string name="show_time">Время</string>
+    <string name="show_date">Дата</string>
+
+    <string name="clear_btn_text">Очистить</string>
+
+    <string name="choose_action">Выберите действие</string>
+    <string name="add_user">Добавить пользователя</string>
+    <string name="add_user_impossible">Невозможно добавить пользователя</string>
+    <string name="remove_user">Удалить пользователя</string>
+    <string name="remove">Удалить</string>
+    <string name="remove_user_by_id">по ID</string>
+    <string name="remove_user_by_login">по Login</string>
+    <string name="choose_param">выберите параметр для удаления</string>
+    <string name="remove_user_hint">введите значение</string>
+    <string name="show_all_users">Посмотреть всех пользователей</string>
+</resources>

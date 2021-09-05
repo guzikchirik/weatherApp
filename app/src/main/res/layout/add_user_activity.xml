@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_gray"
+    tools:context=".activities.user.AddUserActivity">
+
+    <TextView
+        android:id="@+id/get_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_user"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="94dp" />
+    <TextView style="@style/add_new_user"
+        android:id="@+id/user"
+        android:hint="@string/user"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"/>
+    <EditText
+        style="@style/add_new_user"
+        android:id="@+id/login"
+        android:hint="@string/login"/>
+    <EditText
+        style="@style/add_new_user"
+        android:id="@+id/last_name"
+        android:hint="@string/lastName"/>
+    <EditText
+        style="@style/add_new_user"
+        android:id="@+id/first_name"
+        android:hint="@string/firstName"/>
+    <EditText
+        style="@style/add_new_user"
+        android:id="@+id/middle_name"
+        android:hint="@string/middleName"/>
+    <EditText
+        style="@style/add_new_user"
+        android:id="@+id/age"
+        android:hint="@string/age"
+        android:inputType="numberDecimal"/>
+    <TextView style="@style/add_new_user"
+        android:id="@+id/address"
+        android:hint="@string/address"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"/>
+    <EditText
+        style="@style/add_new_user"
+        android:id="@+id/city"
+        android:hint="@string/city"/>
+    <EditText
+        style="@style/add_new_user"
+        android:id="@+id/street"
+        android:hint="@string/street"/>
+    <EditText
+        style="@style/add_new_user"
+        android:id="@+id/building"
+        android:hint="@string/building"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/create_user_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/light_green_shine"
+        android:text="@string/create_user"/>
+</LinearLayout>

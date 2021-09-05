@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group1">
+        <item android:id="@+id/menu_city_1" android:title="@string/menu_opt_1"/>
+        <item android:id="@+id/menu_city_2" android:title="@string/menu_opt_2"/>
+        <item android:id="@+id/menu_city_3" android:title="@string/menu_opt_3"/>
+        <item android:id="@+id/menu_city_4" android:title="@string/menu_opt_4"/>
+        <item android:id="@+id/menu_city_5" android:title="@string/menu_opt_5"/>
+    </group>
+    <group android:id="@+id/group2">
+        <item android:id="@+id/quit" android:title="@string/quit"/>
+    </group>
+</menu>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mua_bg_light_blue"
+    tools:context=".activities.user.MainUserActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_action"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/mua_btn_blue"/>
+
+    <Button style="@style/main_user_activity"
+        android:id="@+id/add_user"
+        android:text="@string/add_user" />
+
+    <Button style="@style/main_user_activity"
+        android:id="@+id/remove_user"
+        android:text="@string/remove_user"/>
+
+    <Button style="@style/main_user_activity"
+        android:id="@+id/show_all_users"
+        android:text="@string/show_all_users" />
+</LinearLayout>

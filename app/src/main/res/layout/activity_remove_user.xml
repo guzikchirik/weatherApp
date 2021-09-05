@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.user.RemoveUserActivity"
+    android:background="@color/mua_bg_light_blue">
+
+    <TextView
+        android:id="@+id/remove_user_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="@color/mua_btn_blue"
+        android:text="@string/remove_user" />
+
+    <RadioGroup
+        android:id="@+id/remove_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/remove_user_title"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/remove_by_id_opt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/remove_user_by_id" />
+
+        <RadioButton
+            android:id="@+id/remove_by_login_opt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/remove_user_by_login" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/remove_by_value"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/remove_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:inputType="textPersonName"
+        android:hint="@string/remove_user_hint"/>
+
+    <Button
+        android:id="@+id/remove_user_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/remove_by_value"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/mua_btn_blue"
+        android:textColor="@color/mua_txt_gray"
+        android:layout_marginTop="10dp"
+        android:text="@string/remove" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/remove_user_btn"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="@color/mua_btn_blue"/>
+
+</RelativeLayout>

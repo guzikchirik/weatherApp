@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/logo"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/user_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginTop="100sp"
+        android:backgroundTint="@color/light_green"
+        android:fontFamily="@font/montserrat_bold"
+        android:hint="@string/hint_user_field"
+        android:imeOptions="actionDone"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorHint="@color/white" />
+
+    <ImageButton
+        android:id="@+id/clear_btn"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_below="@+id/logo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="50dp"
+        android:background="?android:attr/activatedBackgroundIndicator"
+        android:src="@android:drawable/ic_notification_clear_all"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/main_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_field"
+        android:layout_marginHorizontal="110sp"
+        android:layout_marginTop="20sp"
+        android:backgroundTint="@color/light_green_shine"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/main_btn" />
+
+    <TextView
+        android:id="@+id/status_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:layout_below="@+id/main_btn"
+        android:fontFamily="@font/montserrat_bold"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:visibility="invisible"/>
+
+    <TableLayout
+        android:id="@+id/result_info_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_btn">
+
+        <TableRow>
+            <TextView
+                style="@style/result_info"
+                android:id="@+id/result_info_weather_in"/>
+
+            <TextView
+                style="@style/result_info"
+                android:id="@+id/result_info_city"/>
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:id="@+id/result_info_description"
+                android:layout_span="2"
+                style="@style/result_info"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                style="@style/result_info"
+                android:id="@+id/result_info_temp_desc"/>
+
+            <TextView
+                style="@style/result_info"
+                android:id="@+id/result_info_temp_val"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                style="@style/result_info"
+                android:id="@+id/result_info_feel_like_desc"/>
+
+            <TextView
+                style="@style/result_info"
+                android:id="@+id/result_info_feel_like_val"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                style="@style/result_info"
+                android:id="@+id/result_info_pressure_desc"/>
+
+            <TextView
+                style="@style/result_info"
+                android:id="@+id/result_info_pressure_val"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                style="@style/result_info"
+                android:id="@+id/result_info_wind_speed_desc"/>
+
+            <TextView
+                style="@style/result_info"
+                android:id="@+id/result_info_wind_speed_val"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                style="@style/result_info"
+                android:id="@+id/result_info_humidity_desc"/>
+
+            <TextView
+                style="@style/result_info"
+                android:id="@+id/result_info_humidity_val"/>
+        </TableRow>
+    </TableLayout>
+
+<!--    <Button-->
+<!--        android:id="@+id/new_screen"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/logo"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:backgroundTint="@color/light_green"-->
+<!--        android:onClick="goToNewScreen"-->
+<!--        android:text="@string/add_user"-->
+<!--        android:textColor="@color/white" />-->
+
+    <Button
+        android:id="@+id/show_time_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_field"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/light_blue"
+        android:textColor="@color/white"
+        android:text="@string/show_time" />
+
+    <Button
+        android:id="@+id/show_date_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_field"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/light_blue"
+        android:textColor="@color/white"
+        android:text="@string/show_date" />
+
+
+</RelativeLayout>
