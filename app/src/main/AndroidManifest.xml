@@ -13,6 +13,9 @@
         android:theme="@style/Theme.WeatherApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".activities.study.WebMapCallActivity"
+            android:exported="true" />
+        <activity
             android:name=".activities.user.UserAddedActivity"
             android:exported="true" />
         <activity

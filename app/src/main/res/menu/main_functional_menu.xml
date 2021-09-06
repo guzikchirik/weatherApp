@@ -3,6 +3,7 @@
     <group android:id="@+id/main_functional">
         <item android:id="@+id/weather" android:title="@string/find_out_the_weather"/>
         <item android:id="@+id/work_with_user_account" android:title="@string/work_with_user_account"/>
+        <item android:id="@+id/study" android:title="@string/study"/>
         <item android:id="@+id/quit" android:title="@string/quit"/>
     </group>
 </menu>

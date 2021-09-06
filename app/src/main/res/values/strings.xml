@@ -20,7 +20,10 @@
     <string name="menu_opt_3">Солигорск</string>
     <string name="menu_opt_4">Слуцк</string>
     <string name="menu_opt_5">Скробово</string>
+
+
     <string name="quit">Выход</string>
+    <string name="study">Обучение</string>
 
     <string name="red">Красный</string>
     <string name="green">Зеленый</string>

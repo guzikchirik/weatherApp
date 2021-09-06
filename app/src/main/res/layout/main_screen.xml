@@ -32,7 +32,8 @@
         android:imeOptions="actionDone"
         android:inputType="textPersonName"
         android:textAlignment="center"
-        android:textColorHint="@color/white" />
+        android:textColorHint="@color/white"
+        android:textColor="@color/mua_bg_light_blue"/>
 
     <ImageButton
         android:id="@+id/clear_btn"

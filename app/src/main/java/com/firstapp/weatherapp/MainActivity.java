@@ -18,6 +18,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.firstapp.weatherapp.activities.study.WebMapCallActivity;
 import com.firstapp.weatherapp.activities.user.MainUserActivity;
 import com.firstapp.weatherapp.tasks.GetWeather;
 import com.firstapp.weatherapp.tasks.GetWeatherExecutor;
@@ -105,6 +106,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             }
+            case R.id.study: {
+                Intent intent = new Intent(this, WebMapCallActivity.class);
+                startActivity(intent);
+                break;
+            }
+
             case R.id.quit: {
                 finish();
                 break;
