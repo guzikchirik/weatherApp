@@ -5,6 +5,7 @@
         <item android:id="@+id/work_with_user_account" android:title="@string/work_with_user_account"/>
         <item android:id="@+id/study" android:title="@string/study"/>
         <item android:id="@+id/myBrowser" android:title="@string/myBrowser"/>
+        <item android:id="@+id/data_base" android:title="@string/db_working_with_bd"/>
         <item android:id="@+id/quit" android:title="@string/quit"/>
     </group>
 </menu>
