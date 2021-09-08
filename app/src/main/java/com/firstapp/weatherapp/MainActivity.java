@@ -18,6 +18,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.firstapp.weatherapp.activities.study.StartWebBrowser;
 import com.firstapp.weatherapp.activities.study.WebMapCallActivity;
 import com.firstapp.weatherapp.activities.user.MainUserActivity;
 import com.firstapp.weatherapp.tasks.GetWeather;
@@ -108,6 +109,11 @@ public class MainActivity extends AppCompatActivity {
             }
             case R.id.study: {
                 Intent intent = new Intent(this, WebMapCallActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.myBrowser: {
+                Intent intent = new Intent(this, StartWebBrowser.class);
                 startActivity(intent);
                 break;
             }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.firstapp.weatherapp">
+    package="com.firstapp.weatherapp" >
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,7 +11,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WeatherApp"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name=".activities.study.StartWebBrowser"
+            android:exported="true" />
+        <activity
+            android:name=".activities.study.WebBrowser"
+            android:exported="true"
+            android:label="MyBrowser" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <data android:scheme="http" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".activities.study.WebMapCallActivity"
             android:exported="true" />
@@ -20,7 +35,7 @@
             android:exported="true" />
         <activity
             android:name=".activities.user.RemoveUserActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="ru.startandroid.intent.action.removeUser" />
 
@@ -29,7 +44,7 @@
         </activity>
         <activity
             android:name=".activities.user.ShowAllUsersActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="ru.startandroid.intent.action.showAllUsers" />
 
@@ -39,7 +54,7 @@
         <activity
             android:name=".activities.ActivityDateExtended"
             android:exported="true"
-            android:label="Date Extended">
+            android:label="Date Extended" >
             <intent-filter>
                 <action android:name="ru.startandroid.intent.action.showdate" />
 
@@ -49,7 +64,7 @@
         <activity
             android:name=".activities.ActivityDate"
             android:exported="true"
-            android:label="Date">
+            android:label="Date" >
             <intent-filter>
                 <action android:name="ru.startandroid.intent.action.showdate" />
 
@@ -59,7 +74,7 @@
         <activity
             android:name=".activities.ActivityTime"
             android:exported="true"
-            android:label="Time">
+            android:label="Time" >
             <intent-filter>
                 <action android:name="ru.startandroid.intent.action.showtime" />
 
@@ -68,7 +83,7 @@
         </activity>
         <activity
             android:name=".activities.user.AddUserActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="ru.startandroid.intent.action.addUser" />
 
@@ -80,7 +95,7 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
