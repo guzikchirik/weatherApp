@@ -20,6 +20,7 @@ import android.widget.Toast;
 
 import com.firstapp.weatherapp.activities.study.DataBaseActivity;
 import com.firstapp.weatherapp.activities.study.StartWebBrowser;
+import com.firstapp.weatherapp.activities.study.ThreadExperimentsActivity;
 import com.firstapp.weatherapp.activities.study.WebMapCallActivity;
 import com.firstapp.weatherapp.activities.user.MainUserActivity;
 import com.firstapp.weatherapp.tasks.GetWeather;
@@ -120,6 +121,11 @@ public class MainActivity extends AppCompatActivity {
             }
             case R.id.data_base: {
                 Intent intent = new Intent(this, DataBaseActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.thread_experiments: {
+                Intent intent = new Intent(this, ThreadExperimentsActivity.class);
                 startActivity(intent);
                 break;
             }

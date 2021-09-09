@@ -25,8 +25,10 @@
     <string name="quit">Выход</string>
     <string name="study">Обучение</string>
     <string name="myBrowser">Мой браузер</string>
-    
+
     <string name="db_working_with_bd">Работа с SQLite БД</string>
+
+    <string name="thread_experiments">Многопоточность</string>
 
     <string name="red">Красный</string>
     <string name="green">Зеленый</string>

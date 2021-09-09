@@ -6,6 +6,7 @@
         <item android:id="@+id/study" android:title="@string/study"/>
         <item android:id="@+id/myBrowser" android:title="@string/myBrowser"/>
         <item android:id="@+id/data_base" android:title="@string/db_working_with_bd"/>
+        <item android:id="@+id/thread_experiments" android:title="@string/thread_experiments"/>
         <item android:id="@+id/quit" android:title="@string/quit"/>
     </group>
 </menu>

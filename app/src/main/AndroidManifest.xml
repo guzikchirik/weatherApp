@@ -14,6 +14,9 @@
         android:theme="@style/Theme.WeatherApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".activities.study.ThreadExperimentsActivity"
+            android:exported="true" />
+        <activity
             android:name=".activities.study.DataBaseActivity"
             android:exported="true" />
         <activity
