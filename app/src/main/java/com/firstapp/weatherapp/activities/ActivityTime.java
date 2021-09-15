@@ -19,7 +19,7 @@ public class ActivityTime extends Activity {
         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
         String time = sdf.format(new Date(System.currentTimeMillis()));
 
-        TextView tvTime = (TextView) findViewById(R.id.tvTime);
+        TextView tvTime = findViewById(R.id.tvTime);
         tvTime.setText(time);
     }
 }

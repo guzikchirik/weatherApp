@@ -86,7 +86,7 @@ public class UserService {
 //                    text.setText(Objects.requireNonNull(responseActual[0]));
                     try {
                         ObjectMapper objectMapper = new ObjectMapper();
-                        users = objectMapper.readValue(responseActual[0], new TypeReference<>() {
+                        users = objectMapper.readValue(responseActual[0], new TypeReference<List<User>>() {
                         });
                         StringBuilder sb = new StringBuilder();
                         for (User user : users) {
